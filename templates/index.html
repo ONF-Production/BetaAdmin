@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+ <!-- Slider-->
+    <section class="container section slider">
+        <div class="carousel carousel-slides center" >
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class=" ">
+              <div class="row valign-wrapper">
+                <div class="col s2">
+            <div class="carousel-item  white-text" href="#one!">
+                <img class="responsive-img" src="{% static 'img/portada.png' %}" alt="" >
+                <h2></h2>
+                <p class="white-text"></p>
+            </div>
+            <div class="carousel-item  white-text" href="#two!">
+                <img class="responsive-img" src="{% static 'img/portada2.png' %}" alt="" >
+              <h2></h2>
+              <p class="white-text"></p>
+            </div>
+
+            <!--Puedes agregar mas imagenes al carrusel-->
+                </div>
+                </div>
+                </div>
+                </div>
+
+          </div>
+    </section>
+ </div>
+ 
+
+
+<main>
+<div class="container">
+<div class="section">
+
+  <!--   Icon Section   -->
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+        <h5 class="center">Speeds up development</h5>
+
+        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+        <h5 class="center">Misión </h5>
+
+        <p class="light">Extistimos para crear oportunidades por medio del acompañamiento,
+        
+        </p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+        <h5 class="center">Easy to work with</h5>
+
+        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br><br>
+</div>
+</main>
+
+{% endblock %}

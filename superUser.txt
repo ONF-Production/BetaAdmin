@@ -1,0 +1,3 @@
+Nombre de usuario (leave blank to use 'onf_p'): nestor678
+Dirección de email: nestorfabi@gmail.com
+Contraseña: autg2023

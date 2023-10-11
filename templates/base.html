@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>ONF | Betania</title>
+  <link rel="icon" href="{% static 'img/logo.ico' %}">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- CSS  -->
+  <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+<link rel="stylesheet" href="{% static 'css/estilosBeta.css' %}">
+
+
+
+  </head>
+<body>
+  <!-- Menu de Navegación -->
+  <div class="navbar-fixed">
+    <nav class="#f44336 red  " role="navigation">
+        <div class="nav-wrapper  nav container">
+    
+          <a id="logo-container" href="#" class="brand-logo l">
+            <i class="materialize-icons" width="6" height="6">
+              <img  class="pequeña" src="{% static 'img/logo.ico' %}" name="icono beta">
+            </i>
+            
+          </a>
+          <a href="#" data-target="mobile-links" class="sidenav-trigger"><i class="material-icons" class="#f44336 red  ">menu</i></a>
+    
+          <ul class="right hide-on-med-and-down">
+            <li><a href="{% url 'index' %}" >Inicio</a></li>
+            <li>
+                <a href="#" class="dropdown-trigger" data-target="id_drop">
+                ¿Quiénes somos?
+                <i class="material-icons right"></i>
+                </a>
+               
+            </li>
+            <li>
+                <a href="#" class="dropdown-trigger" data-target="id_drop1">
+                    Blog
+                    <i class="material-icons right"></i>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#" class="dropdown-trigger" data-target="id_drop1">
+                    Carreras
+                    <i class="material-icons right">arrow_drop_down</i>
+                </a>
+                <ul id="id_drop2" class="dropdown-content">
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" >Contacto</a></li>
+            
+            <li><a href="#" >Ingresar</a></li>
+            
+            
+            
+          </ul>
+      
+          <ul id="mobile-links" class="sidenav" >
+            <li><a href="{% url 'index' %}" >Inicio</a></li>
+            <li><a href="#" class="dropdown-trigger" data-target="id_drop3">
+                ¿Quiénes somos?
+                <i class="material-icons right"></i>
+                </a>
+         </li>
+            <li><a href="#" class="dropdown-trigger" data-target="id_drop4">
+                Blog
+                <i class="material-icons right"></i>
+                </a>
+            </li>
+            <li><a href="#" class="dropdown-trigger" data-target="id_drop5">
+                Carreras
+                <i class="material-icons right">arrow_drop_down</i>
+                </a>
+                <ul id="id_drop5" class="dropdown-content">
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#" >Contacto</a></li>
+            <li><a href="#" >Ingresar</a></li>
+          </ul>
+          
+      </nav>
+  </div>
+  
+  {% block contenido %}
+
+  {% endblock %}
+
+
+  <footer class="page-footer #f44336 red ">
+      <div class="footer-copyright">
+      <div class="container center text-alin-">
+      &copf; Hogar de Betania | 2023
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'js/materialize.js' %}"></script>
+  <script src="{% static 'js/init.js' %}"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $('.dropdown-trigger').dropdown();
+
+  document.addEventListener('DOMContenLoaded',function(){
+    M.AutoInit();
+  });
+  </script>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
