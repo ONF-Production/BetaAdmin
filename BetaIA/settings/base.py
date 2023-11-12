@@ -27,7 +27,9 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
     
 ]
-TERCEROS_APPS = []
+TERCEROS_APPS = [
+    'rest_framework',
+]
 LOCAL_APPS = [
     "apps.inicio",
     
